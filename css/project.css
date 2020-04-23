@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans",Arial,sans-serif;
+    background: #F5F8FA;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+/* --------------------Start of navBar------------------- */
+
+nav {
+    width: 100%;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #ffffff;
+    box-shadow: 0px 4px 5px -4px rgba(153,155,156,1);
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-transform: capitalize;
+    list-style: none;
+    align-items: center; /* Align Items Vertically */
+    justify-content: space-between; /* Align Items Horizontally (with equal space in between each of them */
+    text-align: center;
+}
+
+li {
+    flex: 1;
+    text-decoration: none;
+}
+
+li :hover{
+    background: #ffffff;
+    border-bottom: 4px solid #2376E5;
+    box-sizing: border-box;
+    transition: border-bottom .5s;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    color: #727276;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+
+}
+
+#email {
+    color: rgb(81, 144, 226);
+}
+#instagram {
+    color: rgb(201, 77, 133);
+}
+#github {
+    color: rgb(86, 92, 99);
+}
+#spotify {
+    color: rgb(83, 204, 126);
+}
+
+/* --------------------End of navBar------------------- */
+
+
+/* --------------------Start of Wrapper------------------- */
+
+
+.wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #ffffff;
+}
+
+#profile {
+    margin-top: 1em;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius:50% 50% 50% 50%;
+    border: 5px solid #ffffff;
+    background-size: cover;
+    transform: none;
+    box-shadow: none;
+    transition: all .2s ease-in-out;
+}
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    grid-row: 1 / span 2;
+    align-content: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.left_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+}
+
+.profile {
+    display: grid;
+    background: linear-gradient( #34A853 50%, #ffffff 50%);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.profile_links {
+    font-size: 1.5vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 5px;
+    border-radius: 7px 7px 7px 7px;
+    border: 1px solid #EBEBEB;
+    font-family: "Helvetica Neue";
+    padding-bottom: .8em;
+    padding-left: 1em;
+    padding-right: .3em;
+    top: 0;
+    position: sticky;
+    margin: .5em;
+    max-height: 500px;
+
+}
+
+.profile_links > p {
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: .2em;
+    color: #828286;
+    font-weight: 400;
+    font-size: 24px;
+    height: auto;
+    text-align: left;
+}
+
+.profile_links > a {
+    width: 100%;
+    color: #828286;
+    height: auto;;
+    font-size: 18px;
+    text-align: start;
+}
+
+svg {
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: ease-in-out .1s;
+
+}
+
+svg:hover {
+    transform: scale(1.2);
+    transition: ease-in-out .1s;
+}
+
+.right {
+    grid-column: 6;
+    grid-row: -1 / span 1;
+    background: #ffffff;
+}
+
+.top {
+    grid-column: 2 / 6;
+    padding-top: 1rem;
+    text-align: left;
+    text-indent: 3rem;
+    color: #828286;
+}
+
+.bottom {
+    grid-column: 2 / 7;
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+}
+
+/* --------------------End of Wrapper------------------- */
+
+.Gallery_title {
+    color: #727276;
+    display: grid;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #ffffff;
+}
+
+/* --------------------Start of Gallery------------------- */
+
+
+
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid #EBEBEB;
+}
+
+.frame img {
+    border: 2px solid rgba(0,0,0,0.25);
+    margin: 0;
+    padding: 0em;
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 13rem;
+    transition: all .4s ease-in-out;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.frame {
+    box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.45);
+    padding: .75em;
+    border-color: #464646ff;
+    border-style: inset;
+    border-width: 15px;
+    display: block;
+    height: auto;
+    background-color: white;
+}
+
+
+/* --------------------End of Gallery------------------- */
+
+
+
+
+@media (max-width: 800px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .wrapper {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: 0;
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .left {
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+    .profile_links {
+        justify-items: center;
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+    .profile_links > a {
+        text-align: center;
+    }
+    .right {
+        display: none;
+    }
+    .top {
+        grid-column: 1 / 3; 
+        grid-row: 1;
+        text-indent: 0;
+        text-align: center;
+    }
+    .bottom {
+        margin-top: 0;
+        grid-column: 1 / 3; 
+        padding: 0;
+        text-indent: 0;
+    }
+    .bottom > p {
+        margin: 0;
+    }
+
+    /*---Gallery---*/
+
+    .Gallery_title {
+        margin: 0;
+    }
+    h3 {
+        margin: 0
+    }
+
+    .Gallery {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    .Gallery img {
+        max-width: 95%;
+        max-height: 17rem;   
+    }
+    .frame {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
+
+@media (min-width: 9000px) {
+    img:hover {
+        transform: scale(1.3);
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.65);
+        border-radius: 9px 9px 9px 9px;
+    }
+ }
+
+
+
+
+
+
+
+
